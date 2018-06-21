@@ -8,7 +8,6 @@ namespace DockerWcf.Host
     {
         static void Main(string[] args)
         {
-            // Create the ServiceHost.
             using (ServiceHost host = new ServiceHost(typeof(StringService)))
             {
 
@@ -18,7 +17,6 @@ namespace DockerWcf.Host
                 while (true)
                 {
 
-                    // Just hang around until the container destroys the service
                     Thread.Sleep(1000);
                 }
             }
